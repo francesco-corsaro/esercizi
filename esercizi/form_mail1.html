@@ -1,0 +1,172 @@
+<html>
+<head>
+<title>Form per email</title>
+<link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+
+<style>
+body{
+background-color:rgba(206,89,55,0.09);
+}
+h1{
+font-family: 'Lato', sans-serif;
+font-size:3vw;
+color: #CE5937;
+
+}
+p{
+font-family: 'Lato', sans-serif;
+font-size:2vw;
+color: #CE5937;
+}
+* {
+  box-sizing: border-box;
+}
+.container {
+  border-radius: 5px;
+  background-color: grey;
+  padding: 20px;
+  
+}
+
+input[type=text], textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid grey;
+  border-radius: 20px;
+   -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  resize: vertical;
+  font-size: 3vw;
+  font-family: 'Dosis', sans-serif;
+}
+
+input[type=text]:focus {
+  border: 3px solid #555;
+}
+textarea:focus {
+  border: 3px solid #555;
+}
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  float: right;
+	font-family: 'Dosis', sans-serif;
+	font-size: 3vw;
+
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+  border-radius: 30px;
+}
+
+
+
+
+
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  font-size: 3vw;
+  font-family: 'Dosis', sans-serif;
+}
+/* Clear floats after the columns */
+.row1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+
+  @media screen and (max-width: 1000px) {
+  .col-25, .col-75,label, input[type=submit], input[type=text], .container, p, h1, body {
+    width: 100%;
+    margin-top: 0;
+  }
+  }
+  @media screen and (max-device-width: 1000px) {
+  .col-25, .col-75, label, input[type=submit], .container, h1, body {
+    width: 100%;
+    margin-top: 0;
+    font-size:12vw;
+  }
+}
+
+	 @media screen and (max-device-width: 1000px){
+	 input[type=text], textarea,  p{
+	  width: 100%;
+    margin-top: 0;
+    font-size:10vw;
+	 }
+	 
+	 }	
+</style>
+</head>
+<body>
+
+<h1>GingiMail</h1><p>invia mail gratuitamente!!</p>
+<div class="container">
+	<form action="/botmail_casper.php" method="post">
+	<div class="row1">
+    	<div class="col-25">
+      		<label for="fname">Mittente</label>
+		</div>
+		<div class="col-75">
+			<input type="text" name="mit"  id="fname" placeholder="Es:tuonome@mail.com">
+		</div>
+ 	 </div>	
+ 	 <div class="row1">
+    	<div class="col-25">
+      		<label for="lname">Destinatario</label>
+    	</div>
+		<div class="col-75">
+			<input type="text" name="dest" id="lname" placeholder="Es:tuonome@mail.com">
+		</div>
+	</div>
+	<div class="row1">
+		<div class="col-25">
+			<label for="oggetto">Oggetto</label>
+		</div>
+		<div class="col-75">
+			<input type="text" id="oggetto" name="ogg" placeholder="Oggetto del messagio">
+		</div>	
+	</div>	
+	<div class="row1">
+		<div class="col-25">
+			<label for="area">Messaggio</label>
+		</div>
+		<div class="col-75">
+		<textarea id="area" name="corpo"  placeholder="Scrivi qui il tuo messaggio" ></textarea>
+		</div>	
+	</div>		
+	<div class="row1">	
+		
+		<input type="submit" value="Invia">
+	</div>
+	</form>
+
+</div>
+</body>
+
+</html>

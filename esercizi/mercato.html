@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mercatone Corsaro</title>
+
+<link href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap" rel="stylesheet">;
+<link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+<style>
+
+
+	
+p{
+font-family: 'Merriweather', serif;
+
+}
+.a {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.a:hover {background-color: #3e8e41}
+
+.a:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+body {
+margin: 15;
+  
+}
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #23CB3F;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color:  #009A00;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #D2FFD5;
+  color: black;
+}
+
+/* Style the content */
+.content {
+  background-color:  rgba(35,203,63,0.47);/*#D2FFD5;*/
+  padding: 10px;
+  height: 200px; /* Should be removed. Only for demonstration */
+}
+
+/* Style the footer */
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+input[type=text], select, textarea {
+  width: 50%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+</style>
+
+</head>
+<body>
+<div class="topnav"><h2 style="color:#0921FF; font-family: 'Work Sans', sans-serif; font-size:3vw;">Benvenuto su Mercatone Corsaro!</h2></div>
+<div class="content"><p>Da questa pagina puoi comprare i prodotti che desideri</p>
+<form action="/esercizi/mercato.php" method="post">
+<p>Inserisca qui il nome del prodotto desiderato <input type="text" name="prodotto" placeholder="Es: Lavatrice"></p>
+<p>Indicare la quantità da aggiungere al carrello <input type="text" name="quantita" placeholder="Es:3"></p>
+<input type="submit" class="button" value="Aggiungi" />
+
+</div></form>
+</body>
+</html>

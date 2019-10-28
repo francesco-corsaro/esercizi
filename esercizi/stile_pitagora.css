@@ -1,0 +1,4 @@
+
+    table {border: 1px solid gray; border-collapse: collapse;}
+    tr, td {border: 1px solid gray; border-collapse: collapse; padding: 5px; text-align: center;}
+    table.tavola-pitagora td {height: 20px; width: 20px;}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Esercizi Form</title>
+    <meta name="description" content="Roughly 155 characters">
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    
+ 
+<form action="/sito11/read.php" method="post"  >
+<h1>Compila il modulo per ricevere un preventivo gratuito</h1>
+<p>Nome <input name="nome" type="TEXT">
+  Cognome <input type="TEXT" name="cognome"> </p> </br>
+<p>Età: <input name="age" type="TEXT"> 
+   Genere M <input checked="checked" name="gene" type="radio" value="Maschile"/>
+          F<input checked="checked" name="gene" type="radio"value="Femminile"/></p> </br>
+<p> Indirizzo Email <input type="TEXT"  name="mail" ></p> </br>
+Problema riscontrato <select name="problema" > 
+                        <option value="Il computer non si accende" >Il computer non si accende </option>
+                        <option value="Il computer va troppo lento" >Il computer va troppo lento </option>
+                        <option value="Il monitor non funziona">Il monitor non funziona </option>
+                        <option value="Il computer si riscalda velocemnte">Il computer si riscalda velocemnte </option>
+                        </select> <br />
+<p> Inserire eventuali informazioni <em>Importanti</em><br />
+<textarea placeholder="Describe yourself here..." style="margin:10px; width: 301px; height:57px;" name="note" ></textarea> </p>
+<br> Come hai conosciuto l'azienda?
+Amici	 <input type="checkbox" name="c[]" value="Amici">
+Facebook <input type="checkbox" name="c[]" value="Facebook" >
+Volantino<input type="checkbox" name="c[]" value="Volantino" >
+
+<br>
+<p><input type="submit" value="Invia"/></p>
+
+
+</form>
+</body>
+</html>
